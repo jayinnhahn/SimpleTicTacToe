@@ -1,0 +1,197 @@
+.container {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width:100%;
+	background-color: #f1f0ea;
+	font-family: 'Concert One', sans-serif;
+
+	.headerSection { 
+		.header{
+			font-weight: bold;
+			font-size: 6rem;
+		}
+	}
+
+	.tictactoecontainer {
+		display: flex;
+		flex-direction: column;
+		border: 4px solid #2d232e;
+
+		.row1 {
+			display: flex;
+			flex-direction: row;
+
+			.col1 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #2d232e;
+				background-color: #2d232e;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col1:hover {
+				background-color: #AD343E;
+			}
+			.col2 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #e0ddcf;
+				background-color: #e0ddcf;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col2:hover {
+				background-color: #AD343E;
+			}
+			.col3 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #2d232e;
+				background-color: #2d232e;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col3:hover {
+				background-color: #AD343E;
+			}
+		}
+		.row2 {
+			display: flex;
+			flex-direction: row;
+
+			.col1 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #e0ddcf;
+				background-color: #e0ddcf;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col1:hover {
+				background-color: #AD343E;
+			}
+			.col2 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #2d232e;
+				background-color: #2d232e;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col2:hover {
+				background-color: #AD343E;
+			}
+			.col3 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #e0ddcf;
+				background-color: #e0ddcf;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col3:hover {
+				background-color: #AD343E;
+			}
+		}
+		.row3 {
+			display: flex;
+			flex-direction: row;
+
+			.col1 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #2d232e;
+				background-color: #2d232e;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col1:hover {
+				background-color: #AD343E;
+			}
+			.col2 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #e0ddcf;
+				background-color: #e0ddcf;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col2:hover {
+				background-color: #AD343E;
+			}
+			.col3 {
+				height: 9.375rem;
+				width: 9.375rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 2px solid #2d232e;
+				background-color: #2d232e;
+				font-size: 6rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+			.col3:hover {
+				background-color: #AD343E;
+			}
+
+		}
+	}
+	.buttonSection{
+		margin-top: 2rem;
+		display: flex;
+		gap: 2.5rem;
+		.button{
+			font-family: 'Concert One', sans-serif;
+			background-color: #e0ddcf;
+			border: 2px solid #2d232e;
+			color: #2d232e;
+			font-size: 2rem;
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%;
+		}
+		.button:hover{
+			background-color: #2d232e;
+			color: #e0ddcf;
+
+
+		}
+	}
+}
