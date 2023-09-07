@@ -41,10 +41,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		if (roundWon) {
 			announce(currentPlayer === 'X' ? PLAYERX_WON : PLAYERO_WON);
+			
 			isGameActive = false;
 			return;
 		}
-
 		if (!board.includes('')) announce(TIE);
 	}
 
@@ -52,12 +52,21 @@ window.addEventListener('DOMContentLoaded', () => {
 		switch (type) {
 			case PLAYERO_WON:
 				announcer.innerHTML = 'O Wins';
+				setTimeout(function(){
+					alert("O is the Winner!");
+				}, 100)
 				break;
 			case PLAYERX_WON:
 				announcer.innerHTML = 'X Wins';
+				setTimeout(function(){
+					alert("X is the Winner!");
+				}, 100)
 				break;
 			case TIE:
 				announcer.innerText = 'TIE';
+				setTimeout(function(){
+					alert("It's a tie!");
+				}, 100)
 		}
 		announcer.classList.remove('hide');
 	};

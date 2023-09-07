@@ -1,4 +1,4 @@
-.container {
+section {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -10,13 +10,23 @@
 	font-family: 'Concert One', sans-serif;
 
 	.headerSection { 
+		height: fit-content;
 		.header{
 			font-weight: bold;
 			font-size: 6rem;
 		}
 	}
+	.announcerSection{
+		display: flex;
+		flex: row;
+		justify-content: space-between;
+		width: 100%;
+		padding-right: 1rem;
+		padding-left: 1rem;
 
-	.tictactoecontainer {
+	}
+
+	.tictactoeSection {
 		display: flex;
 		flex-direction: column;
 		border: 4px solid #2d232e;
