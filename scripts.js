@@ -1,113 +1,114 @@
-var a;
-var id;
- function clicked(clicked) {
-     
-    if (a == 1) {
-     
-        if (clicked.innerHTML == "") {
-            clicked.innerHTML = "X";
-            id = clicked.id;
-        if (id == 1) {
-            if (document.getElementById('2').innerHTML == "X" && document.getElementById('3').innerHTML == "X" || document.getElementById('4').innerHTML == "X" && document.getElementById('7').innerHTML == "X" || document.getElementById('5').innerHTML == "X" && document.getElementById('9').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 2) {
-            if (document.getElementById('1').innerHTML == "X" && document.getElementById('3').innerHTML == "X" || document.getElementById('5').innerHTML == "X" && document.getElementById('8').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 3) {
-            if (document.getElementById('1').innerHTML == "X" && document.getElementById('2').innerHTML == "X" || document.getElementById('6').innerHTML == "X" && document.getElementById('9').innerHTML == "X" ||
-            document.getElementById('5').innerHTML == "X" && document.getElementById('7').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 4) {
-            if (document.getElementById('1').innerHTML == "X" && document.getElementById('7').innerHTML == "X" || document.getElementById('5').innerHTML == "X" && document.getElementById('6').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 5) {
-            if (document.getElementById('2').innerHTML == "X" && document.getElementById('8').innerHTML == "X" || document.getElementById('4').innerHTML == "X" && document.getElementById('6').innerHTML == "X" || document.getElementById('3').innerHTML == "X" && document.getElementById('7').innerHTML == "X" || document.getElementById('1').innerHTML == "X" && document.getElementById('9').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 6) {
-            if (document.getElementById('3').innerHTML == "X" && document.getElementById('9').innerHTML == "X" || document.getElementById('4').innerHTML == "X" && document.getElementById('5').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 7) {
-            if (document.getElementById('8').innerHTML == "X" && document.getElementById('9').innerHTML == "X" || document.getElementById('1').innerHTML == "X" && document.getElementById('4').innerHTML == "X" || document.getElementById('3').innerHTML == "X" && document.getElementById('5').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 8) {
-            if (document.getElementById('7').innerHTML == "X" && document.getElementById('9').innerHTML == "X" || document.getElementById('2').innerHTML == "X" && document.getElementById('5').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }
-        }
-        else if (id == 9) {
-            if (document.getElementById('3').innerHTML == "X" && document.getElementById('6').innerHTML == "X" || document.getElementById('7').innerHTML == "X" && document.getElementById('8').innerHTML == "X" || document.getElementById('1').innerHTML == "X" && document.getElementById('5').innerHTML == "X") {
-                document.getElementById('output').innerHTML = 'x IS THE WINNER';
-            }  
-        }
-        return a = 0;
-    }
- }
- else {
-    if (clicked.innerHTML == "") {
-    clicked.innerHTML = "O";
-    id = clicked.id;
-        if (id == 1) {
-            if (document.getElementById('2').innerHTML == "o" && document.getElementById('3').innerHTML == "O" || document.getElementById('4').innerHTML == "O" && document.getElementById('7').innerHTML == "O" || document.getElementById('5').innerHTML == "O" && document.getElementById('9').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 2) {
-            if (document.getElementById('1').innerHTML == "O" && document.getElementById('3').innerHTML == "O" || document.getElementById('5').innerHTML == "O" && document.getElementById('8').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 3) {
-            if (document.getElementById('1').innerHTML == "O" && document.getElementById('2').innerHTML == "O" || document.getElementById('6').innerHTML == "O" && document.getElementById('9').innerHTML == "O" ||
-            document.getElementById('5').innerHTML == "O" && document.getElementById('7').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 4) {
-            if (document.getElementById('1').innerHTML == "O" && document.getElementById('7').innerHTML == "O" || document.getElementById('5').innerHTML == "O" && document.getElementById('6').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 5) {
-            if (document.getElementById('2').innerHTML == "O" && document.getElementById('8').innerHTML == "O" || document.getElementById('4').innerHTML == "O" && document.getElementById('6').innerHTML == "O" || document.getElementById('3').innerHTML == "O" && document.getElementById('7').innerHTML == "O" || document.getElementById('1').innerHTML == "O" && document.getElementById('9').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 6) {
-            if (document.getElementById('3').innerHTML == "O" && document.getElementById('9').innerHTML == "O" || document.getElementById('4').innerHTML == "O" && document.getElementById('5').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 7) {
-            if (document.getElementById('8').innerHTML == "O" && document.getElementById('9').innerHTML == "O" || document.getElementById('1').innerHTML == "O" && document.getElementById('4').innerHTML == "O" || document.getElementById('3').innerHTML == "O" && document.getElementById('5').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 8) {
-            if (document.getElementById('7').innerHTML == "O" && document.getElementById('9').innerHTML == "O" || document.getElementById('2').innerHTML == "O" && document.getElementById('5').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
-        else if (id == 9) {
-            if (document.getElementById('3').innerHTML == "O" && document.getElementById('6').innerHTML == "O" || document.getElementById('7').innerHTML == "O" && document.getElementById('8').innerHTML == "O" || document.getElementById('1').innerHTML == "O" && document.getElementById('5').innerHTML == "O") {
-                document.getElementById('output').innerHTML = 'O IS THE WINNER!';
-            }
-        }
+window.addEventListener('DOMContentLoaded', () => {
+	const tiles = Array.from(document.querySelectorAll('#tile'));
+	const playerDisplay = document.querySelector('.display-player');
+	const resetButton = document.querySelector('#reset');
+	const announcer = document.querySelector('.announcer');
 
-        return a = 1;
-        }
-    }
-}
+	let board = ['', '', '', '', '', '', '', '', ''];
+	let currentPlayer = 'X';
+	let isGameActive = true;
+
+	const PLAYERX_WON = 'PLAYERX_WON';
+	const PLAYERO_WON = 'PLAYERO_WON';
+	const TIE = 'TIE';
+
+	const winningConditions = [
+		[0, 1, 2],
+		[3, 4, 5],
+		[6, 7, 8],
+		[0, 3, 6],
+		[1, 4, 7],
+		[2, 5, 8],
+		[0, 4, 8],
+		[2, 4, 6],
+	];
+
+	function handleResultValidation() {
+		let roundWon = false;
+		for (let i = 0; i <= 7; i++) {
+			const winCondition = winningConditions[i];
+			const a = board[winCondition[0]];
+			const b = board[winCondition[1]];
+			const c = board[winCondition[2]];
+			if (a === '' || b === '' || c === '') {
+				continue;
+			}
+			if (a === b && b === c) {
+				roundWon = true;
+				break;
+			}
+		}
+
+		if (roundWon) {
+			announce(currentPlayer === 'X' ? PLAYERX_WON : PLAYERO_WON);
+			isGameActive = false;
+			return;
+		}
+
+		if (!board.includes('')) announce(TIE);
+	}
+
+	const announce = (type) => {
+		switch (type) {
+			case PLAYERO_WON:
+				announcer.innerHTML = 'O Wins';
+				break;
+			case PLAYERX_WON:
+				announcer.innerHTML = 'X Wins';
+				break;
+			case TIE:
+				announcer.innerText = 'TIE';
+		}
+		announcer.classList.remove('hide');
+	};
+
+	const isValidAction = (tile) => {
+		if (tile.innerText === 'X' || tile.innerText === 'O') {
+			return false;
+		}
+		return true;
+	};
+
+	const updateBoard = (index) => {
+		board[index] = currentPlayer;
+	};
+
+	const changePlayer = () => {
+		playerDisplay.classList.remove(`player${currentPlayer}`);
+		currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+		playerDisplay.innerText = currentPlayer;
+		playerDisplay.classList.add(`player${currentPlayer}`);
+	};
+
+	const userAction = (tile, index) => {
+		if (isValidAction(tile) && isGameActive) {
+			tile.innerText = currentPlayer;
+			tile.classList.add(`player${currentPlayer}`);
+			updateBoard(index);
+			handleResultValidation();
+			changePlayer();
+		}
+	};
+
+	const resetBoard = () => {
+		board = ['', '', '', '', '', '', '', '', ''];
+		isGameActive = true;
+		announcer.classList.add('hide');
+
+		if (currentPlayer === 'O') {
+			changePlayer();
+		}
+
+		tiles.forEach((tile) => {
+			tile.innerText = '';
+			tile.classList.remove('playerX');
+			tile.classList.remove('playerO');
+		});
+		announcer.innerHTML = '';
+	};
+
+	tiles.forEach((tile, index) => {
+		tile.addEventListener('click', () => userAction(tile, index));
+	});
+	resetButton.addEventListener('click', resetBoard);
+});
