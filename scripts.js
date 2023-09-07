@@ -23,6 +23,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		[2, 4, 6],
 	];
 
+	const winBoard = []
+
 	function handleResultValidation() {
 		let roundWon = false;
 		for (let i = 0; i <= 7; i++) {
@@ -34,6 +36,15 @@ window.addEventListener('DOMContentLoaded', () => {
 				continue;
 			}
 			if (a === b && b === c) {
+				var winningTile1 = `col${winCondition[0]}`
+				var winningTile2 = `col${winCondition[1]}`
+				var winningTile3 = `col${winCondition[2]}`
+
+				winningTile1.classList.add('winner');
+				winningTile2.classList.add('winner');
+				winningTile3.classList.add('winner');
+				console.log(winningTile1)
+				
 				roundWon = true;
 				break;
 			}
@@ -41,7 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		if (roundWon) {
 			announce(currentPlayer === 'X' ? PLAYERX_WON : PLAYERO_WON);
-			
 			isGameActive = false;
 			return;
 		}
