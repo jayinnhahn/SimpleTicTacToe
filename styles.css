@@ -5,207 +5,429 @@ section {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	width:100%;
+	width: 100%;
 	background-color: #f1f0ea;
 	font-family: 'Concert One', sans-serif;
 
-	.headerSection { 
-		height: fit-content;
-		.header{
-			font-weight: bold;
-			font-size: 6rem;
+	.headerSection .header {
+		font-weight: bold;
+		font-size: 6rem;
+		margin: 0;
+	}
+}
+.announcerSection {
+	display: flex;
+	flex: row;
+	justify-content: space-between;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.tictactoeSection {
+	display: flex;
+	flex-direction: column;
+	border: 4px solid #2d232e;
+
+	#tile {
+		height: 9.375rem;
+		width: 9.375rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 6rem;
+		color: white;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	}
+
+	.winningTile {
+		background-color: #ad343e !important;
+	}
+	.row1 {
+		display: flex;
+		flex-direction: row;
+		.col1 {
+			border: 2px solid #2d232e;
+			background-color: #2d232e;
+		}
+		.col1:hover {
+			background-color: #ad343e;
+		}
+		.col2 {
+			border: 2px solid #e0ddcf;
+			background-color: #e0ddcf;
+		}
+		.col2:hover {
+			background-color: #ad343e;
+		}
+		.col3 {
+			border: 2px solid #2d232e;
+			background-color: #2d232e;
+		}
+		.col3:hover {
+			background-color: #ad343e;
 		}
 	}
-	.announcerSection{
+	.row2 {
 		display: flex;
-		flex: row;
-		justify-content: space-between;
-		width: 100%;
-		padding-right: 1rem;
-		padding-left: 1rem;
+		flex-direction: row;
 
+		.col4 {
+			border: 2px solid #e0ddcf;
+			background-color: #e0ddcf;
+		}
+		.col4:hover {
+			background-color: #ad343e;
+		}
+		.col5 {
+			border: 2px solid #2d232e;
+			background-color: #2d232e;
+		}
+		.col5:hover {
+			background-color: #ad343e;
+		}
+		.col6 {
+			border: 2px solid #e0ddcf;
+			background-color: #e0ddcf;
+		}
+		.col6:hover {
+			background-color: #ad343e;
+		}
 	}
+	.row3 {
+		display: flex;
+		flex-direction: row;
 
-	.tictactoeSection {
+		.col7 {
+			border: 2px solid #2d232e;
+			background-color: #2d232e;
+		}
+		.col7:hover {
+			background-color: #ad343e;
+		}
+		.col8 {
+			border: 2px solid #e0ddcf;
+			background-color: #e0ddcf;
+		}
+		.col8:hover {
+			background-color: #ad343e;
+		}
+		.col9 {
+			border: 2px solid #2d232e;
+			background-color: #2d232e;
+		}
+		.col9:hover {
+			background-color: #ad343e;
+		}
+	}
+}
+.buttonSection {
+	margin-top: 2rem;
+	display: flex;
+	gap: 2.5rem;
+	.button {
+		font-family: 'Concert One', sans-serif;
+		background-color: #e0ddcf;
+		border: 2px solid #2d232e;
+		color: #2d232e;
+		font-size: 2rem;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.button:hover {
+		background-color: #2d232e;
+		color: #e0ddcf;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	section {
+		margin: 0;
 		display: flex;
 		flex-direction: column;
-		border: 4px solid #2d232e;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		width: 100%;
+		background-color: #f1f0ea;
+		font-family: 'Concert One', sans-serif;
 
-		.row1 {
+		.headerSection .header {
+			font-weight: bold;
+			font-size: 3rem;
+			margin: 0;
+		}
+		.announcerSection {
 			display: flex;
-			flex-direction: row;
-
-			.col1 {
-				height: 9.375rem;
-				width: 9.375rem;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border: 2px solid #2d232e;
-				background-color: #2d232e;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-			}
-			.col1:hover {
-				background-color: #AD343E;
-			}
-			.col2 {
-				height: 9.375rem;
-				width: 9.375rem;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border: 2px solid #e0ddcf;
-				background-color: #e0ddcf;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-			}
-			.col2:hover {
-				background-color: #AD343E;
-			}
-			.col3 {
-				height: 9.375rem;
-				width: 9.375rem;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border: 2px solid #2d232e;
-				background-color: #2d232e;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-			}
-			.col3:hover {
-				background-color: #AD343E;
-			}
+			flex: row;
+			justify-content: space-between;
 		}
-		.row2 {
+
+		.tictactoeSection {
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
+			border: 4px solid #2d232e;
 
-			.col4 {
-				height: 9.375rem;
-				width: 9.375rem;
+			#tile {
+				height: 6rem;
+				width: 6rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				border: 2px solid #e0ddcf;
-				background-color: #e0ddcf;
-				font-size: 6rem;
+				font-size: 4rem;
 				color: white;
 				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 			}
-			.col4:hover {
-				background-color: #AD343E;
+			.winningTile {
+				background-color: #ad343e !important;
 			}
-			.col5 {
-				height: 9.375rem;
-				width: 9.375rem;
+			.row1 {
 				display: flex;
-				justify-content: center;
-				align-items: center;
-				border: 2px solid #2d232e;
-				background-color: #2d232e;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+				flex-direction: row;
+				.col1 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col1:hover {
+					background-color: #ad343e;
+				}
+				.col2 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col2:hover {
+					background-color: #ad343e;
+				}
+				.col3 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col3:hover {
+					background-color: #ad343e;
+				}
 			}
-			.col5:hover {
-				background-color: #AD343E;
-			}
-			.col6 {
-				height: 9.375rem;
-				width: 9.375rem;
+			.row2 {
 				display: flex;
-				justify-content: center;
-				align-items: center;
-				border: 2px solid #e0ddcf;
-				background-color: #e0ddcf;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+				flex-direction: row;
+
+				.col4 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col4:hover {
+					background-color: #ad343e;
+				}
+				.col5 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col5:hover {
+					background-color: #ad343e;
+				}
+				.col6 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col6:hover {
+					background-color: #ad343e;
+				}
 			}
-			.col6:hover {
-				background-color: #AD343E;
+			.row3 {
+				display: flex;
+				flex-direction: row;
+
+				.col7 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col7:hover {
+					background-color: #ad343e;
+				}
+				.col8 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col8:hover {
+					background-color: #ad343e;
+				}
+				.col9 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col9:hover {
+					background-color: #ad343e;
+				}
 			}
 		}
-		.row3 {
+		.buttonSection {
+			margin-top: 2rem;
 			display: flex;
-			flex-direction: row;
-
-			.col7 {
-				height: 9.375rem;
-				width: 9.375rem;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border: 2px solid #2d232e;
-				background-color: #2d232e;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-			}
-			.col7:hover {
-				background-color: #AD343E;
-			}
-			.col8 {
-				height: 9.375rem;
-				width: 9.375rem;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border: 2px solid #e0ddcf;
+			gap: 2.5rem;
+			.button {
+				font-family: 'Concert One', sans-serif;
 				background-color: #e0ddcf;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-			}
-			.col8:hover {
-				background-color: #AD343E;
-			}
-			.col9 {
-				height: 9.375rem;
-				width: 9.375rem;
-				display: flex;
-				justify-content: center;
-				align-items: center;
 				border: 2px solid #2d232e;
+				color: #2d232e;
+				font-size: 2rem;
+				width: 5rem;
+				height: 5rem;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.button:hover {
 				background-color: #2d232e;
-				font-size: 6rem;
-				color: white;
-				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+				color: #e0ddcf;
 			}
-			.col9:hover {
-				background-color: #AD343E;
-			}
-
-		}
-	}
-	.buttonSection{
-		margin-top: 2rem;
-		display: flex;
-		gap: 2.5rem;
-		.button{
-			font-family: 'Concert One', sans-serif;
-			background-color: #e0ddcf;
-			border: 2px solid #2d232e;
-			color: #2d232e;
-			font-size: 2rem;
-			width: 5rem;
-			height: 5rem;
-			border-radius: 50%;
-		}
-		.button:hover{
-			background-color: #2d232e;
-			color: #e0ddcf;
-
-
 		}
 	}
 }
 
-.winner{
-	background-color:#AD343E;
+@media screen and (max-width: 320px) {
+	section {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		width: 100%;
+		background-color: #f1f0ea;
+		font-family: 'Concert One', sans-serif;
+
+		.headerSection {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.header {
+				font-weight: bold;
+				font-size: 2rem;
+				margin: 0;
+			}
+			.announcerSection {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		.tictactoeSection {
+			display: flex;
+			flex-direction: column;
+			border: 4px solid #2d232e;
+
+			#tile {
+				height: 4rem;
+				width: 4rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2rem;
+				color: white;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+
+			.winningTile {
+				background-color: #ad343e !important;
+			}
+			.row1 {
+				display: flex;
+				flex-direction: row;
+				.col1 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col1:hover {
+					background-color: #ad343e;
+				}
+				.col2 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col2:hover {
+					background-color: #ad343e;
+				}
+				.col3 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col3:hover {
+					background-color: #ad343e;
+				}
+			}
+			.row2 {
+				display: flex;
+				flex-direction: row;
+
+				.col4 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col4:hover {
+					background-color: #ad343e;
+				}
+				.col5 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col5:hover {
+					background-color: #ad343e;
+				}
+				.col6 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col6:hover {
+					background-color: #ad343e;
+				}
+			}
+			.row3 {
+				display: flex;
+				flex-direction: row;
+
+				.col7 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col7:hover {
+					background-color: #ad343e;
+				}
+				.col8 {
+					border: 2px solid #e0ddcf;
+					background-color: #e0ddcf;
+				}
+				.col8:hover {
+					background-color: #ad343e;
+				}
+				.col9 {
+					border: 2px solid #2d232e;
+					background-color: #2d232e;
+				}
+				.col9:hover {
+					background-color: #ad343e;
+				}
+			}
+		}
+		.buttonSection {
+			margin-top: 2rem;
+			display: flex;
+			gap: 2.5rem;
+			.button {
+				cursor: pointer;
+				font-family: 'Concert One', sans-serif;
+				background-color: #e0ddcf;
+				border: 2px solid #2d232e;
+				color: #2d232e;
+				font-size: 1.5rem;
+				width: 3rem;
+				height: 3rem;
+				border-radius: 50%;
+			}
+			.button:hover {
+				background-color: #2d232e;
+				color: #e0ddcf;
+			}
+		}
+	}
 }
